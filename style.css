@@ -1,0 +1,54 @@
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+.conteudo,.header,.footer
+{
+	padding:0px;
+	margin:0;
+	width:100%;
+}
+
+.headerlogo
+{
+	background-color:white;
+	background-image:url("img/header.png");
+	height:37px;
+}
+
+.headerimage
+{
+	background-image:url("img/header_bg.jpg");
+	background-repeat:no-repeat;
+	height:403px;
+}
+
+.conteudo .shadowup
+{
+	background-image:url("img/content_shadowup.jpg");
+	background-repeat:no-repeat;
+	height:18px;
+	
+}
+
+.conteudo .content
+{
+	background-image:url("img/content_bg.jpg");
+	background-repeat:repeat-y;
+}
+
+.conteudo .content .center
+{
+	width:54px
+}
+
+
+.conteudo .shadowdown
+{
+	background-image:url("img/content_shadowdown.jpg");
+	background-repeat:no-repeat;
+	height:18px;
+	
+}
