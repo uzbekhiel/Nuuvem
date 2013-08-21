@@ -7,8 +7,7 @@ body
 .conteudo,.header,.footer
 {
 	padding:0px;
-	margin:0;
-	width:100%;
+	margin:0px;
 }
 
 .headerlogo
@@ -18,11 +17,14 @@ body
 	height:37px;
 }
 
-.headerimage
-{
-	background-image:url("img/header_bg.jpg");
-	background-repeat:no-repeat;
-	height:403px;
+.headerimage  {
+	padding:0px;
+	margin:0px;
+}
+
+.headerimage img {
+	width:100%;
+	display:block;
 }
 
 .conteudo .shadowup
@@ -31,17 +33,27 @@ body
 	background-repeat:no-repeat;
 	height:18px;
 	
+	background-size:100% 100%;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+		src='img/content_shadowup.jpg',
+		sizingMethod='scale');
 }
 
 .conteudo .content
 {
 	background-image:url("img/content_bg.jpg");
 	background-repeat:repeat-y;
+	width:100%;
+	background-size:100% 100%;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+		src='img/content_bg.jpg',
+		sizingMethod='scale');	
+
 }
 
 .conteudo .content .center
 {
-	width:54px
+	
 }
 
 
@@ -50,5 +62,8 @@ body
 	background-image:url("img/content_shadowdown.jpg");
 	background-repeat:no-repeat;
 	height:18px;
-	
+	background-size:100% 100%;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+		src='img/content_shadowdown.jpg',
+		sizingMethod='scale');	
 }
