@@ -18,9 +18,9 @@ body
 
 .headerlogo
 {
-	background-color:white;
 	background-image:url("img/header.png");
-	height:37px;
+	height:80px;
+	background-size:100% 100%;
 }
 
 .bg {
@@ -28,18 +28,19 @@ body
 	display:block;
 }
 
-#personagens {
-	width:30%;
+.personagens {
+	min-width:37.4%;
+	hheight:50.7%;
+	max-height:77.4%;
 	display:inline;
-	left:48%;
-	top:1.5%;
+	margin-left:46%;
 	position:absolute;
 }
 
 #logo-topo
 {
-	width:10%;
-	margin-top:0.5%;
+	width:12%;
+	margin-top:2.4%;
 	margin-left: 25%;
 }
 
@@ -54,13 +55,13 @@ body
 
 #h2
 {
-	font-size: 200%;
+	font-size: 140%;
 	color: #FFFFFF;
 }
 
 #h3
 {
-	font-size: 120%;
+	font-size: 80%;
 	color: #FFBA00;
 }
 
