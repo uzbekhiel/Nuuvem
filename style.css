@@ -72,7 +72,7 @@ body
 {
 	background-image:url("img/content_shadowup.jpg");
 	background-repeat:no-repeat;
-	height:18px;
+	height:10px;
 	
 	background-size:100% 100%;
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
@@ -97,15 +97,59 @@ body
 	width:49%;
 	margin-left: auto ;
 	margin-right: auto ;
+	padding-top:1%;
+}
+
+.campanha-titulo
+{
+	color:#3F1000;
+	font-size: 150%;
+	font-weight:bold;
+	font-family: Times New Roman;
+}
+
+.campanha-text
+{
+	color:#212121;
+	font-size: 80%;
+	font-family: Arial;
+}
+
+.middle-line
+{
+	margin-left:-22%
+}
+
+.button
+{
+	padding-left:28%;
+	padding-top:3%;
 }
 
 .conteudo .shadowdown
 {
 	background-image:url("img/content_shadowdown.jpg");
 	background-repeat:no-repeat;
-	height:18px;
+	height:10px;
+	
 	background-size:100% 100%;
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
 		src='img/content_shadowdown.jpg',
 		sizingMethod='scale');	
+}
+
+.footer
+{
+	background-image:url("img/footer.jpg");
+	height:56px;
+	background-size:100% 100%;
+}
+
+#logo-topo
+{
+	max-width: 100%;
+    height: auto;
+	width: auto; 
+	margin-top:1%;
+	margin-left: 25%;
 }
