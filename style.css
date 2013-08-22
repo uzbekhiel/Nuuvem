@@ -24,23 +24,26 @@ body
 }
 
 .bg {
-	width:100%;
+	max-width:100%;
+	height: 100%;
+	wwidth: auto;
 	display:block;
 }
 
 .personagens {
-	min-width:37.4%;
-	hheight:50.7%;
-	max-height:77.4%;
-	display:inline;
-	margin-left:46%;
+	margin-left:36%;
 	position:absolute;
+	max-width: 100%;
+    height: auto;
+	width: auto; 
 }
 
 #logo-topo
 {
-	width:12%;
-	margin-top:2.4%;
+	max-width: 100%;
+    height: auto;
+	width: auto; 
+	margin-top:1%;
 	margin-left: 25%;
 }
 
