@@ -17,11 +17,12 @@
 			<div class="headerlogo" ><img src="img/logo-topo.png" id="logo-topo" /></div>
 			<div class="topo-text">
 				<span id="h3">SUPER CAMPANHA DE</span><br />
-				<span id="h2">FINAL DE SEMANA</span>
+				<span id="h2">FINAL DE SEMANA</span><br />
+				<span id="h5">TEMPO RESTANTE</span>
 				<script>
 					var myCountdown1 = new Countdown({
-							width	  	: 200,      // Defaults to 200 x 30 pixels, you can specify a custom size here
-							height	 	: 30, 
+							width	  	: $(window).width()*0.16,      // Defaults to 200 x 30 pixels, you can specify a custom size here
+							height	 	: $(window).height()*0.068, 
 							rangeHi  : "day",
                             year: 2013,
 							month: 09,
@@ -32,7 +33,12 @@
 							numbers : {
 								font : "Arial",
 								color	: "#151515"
-                            }
+                            },
+							labels	:	{
+								font  	: "Arial",
+								color 	: "#FFBA00",
+								weight	: "bold"
+							}
 							});
 				</script>
 			</div>
