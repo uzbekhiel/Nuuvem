@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<script src="http://code.jquery.com/jquery-2.0.3.min.js" type="text/javascript"></script>
+	<script src="js/code.js" type="text/javascript"></script>
+	<script src="js/tiny-carousel.js" type="text/javascript"></script>
+	<script src="js/countdown.js" type="text/javascript"></script>
+	
+	<script src="js/jquery.lighter.js"></script>
+	<link href="css/jquery.lighter.css" rel="stylesheet" />
 </head>
 <body >
 	<div class="wrapper">
@@ -12,6 +18,23 @@
 			<div class="topo-text">
 				<span id="h3">SUPER CAMPANHA DE</span><br />
 				<span id="h2">FINAL DE SEMANA</span>
+				<script>
+					var myCountdown1 = new Countdown({
+							width	  	: 200,      // Defaults to 200 x 30 pixels, you can specify a custom size here
+							height	 	: 30, 
+							rangeHi  : "day",
+                            year: 2013,
+							month: 09,
+							day : 10, 
+                            hour	: 0,
+                            minute	: 0, 
+                            second	: 0,
+							numbers : {
+								font : "Arial",
+								color	: "#151515"
+                            }
+							});
+				</script>
 			</div>
 			<img src="img/header_bg.jpg" class="bg" />
 			
@@ -26,13 +49,28 @@
 					<br /><br />
 			Cras ac tincidunt mi. Curabitur quis nulla vel libero sagittis mollis nec ac justo. Nullam vulputate bibendum felis, quis tristique tortor porta gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet sapien felis, at elementum urna. Mauris adipiscing lorem vel dolor tempor lacinia. Duis nec turpis leo, in lobortis nisl. Duis id velit id ante pulvinar semper. Cras euismod, magna ut porta dapibus, odio magna bibendum sapien, vel suscipit augue augue vel ipsum. Pellentesque adipiscing justo ultrices enim auctor placerat. Phasellus id sodales tortor.</span>
 					<img src="img/middle-line-up.png" class="middle-line up" />
+					<div id="slider-code">
+						<a class="buttons prev" href="#">left</a>
+							<div class="viewport">
+								<ul class="overview">
+									<li><a href="img/slider/tomb_raider__2013__campsite_wallpaper_1920x1080_by_mikky100.jpg" data-lighter><img src="img/slider/tomb_raider__2013__campsite_wallpaper_1920x1080_by_mikky100.jpg" /></a></li>
+									<li><a href="img/slider/tomb-raider-2013-gameplay-screenshot.jpg" data-lighter ><img src="img/slider/tomb-raider-2013-gameplay-screenshot.jpg" /></a></li>
+									<li><a href="img/slider/tomb-raider-2013-video-game-hd-wallpaper.jpg" data-lighter ><img src="img/slider/tomb-raider-2013-video-game-hd-wallpaper.jpg" /></a></li>
+									<li><a href="img/slider/Tomb-Raider_2013-3.jpg" data-lighter><img src="img/slider/Tomb-Raider_2013-3.jpg" /></a></li>
+									<li><a href="img/slider/1920x-1.jpg" data-lighter ><img src="img/slider/1920x-1.jpg" /></a></li>
+									<li><a href="img/slider/203160_screenshots_2013-03-05_00034.jpg" data-lighter ><img src="img/slider/203160_screenshots_2013-03-05_00034.jpg" /></a></li>
+									<li><a href="img/slider/lara-croft-e-um-personagem-destravavel-do-multiplayer-de-tomb-raider.jpg" data-lightbox="image-7" ><img src="img/slider/lara-croft-e-um-personagem-destravavel-do-multiplayer-de-tomb-raider.jpg" /></a></li>
+								</ul>
+							</div>
+						<a class="buttons next" href="#">right</a>
+					</div>
 					<img src="img/middle-line-down.png" class="middle-line down" />
 					<span class="campanha-titulo">E ainda...</span><br /><br />
 					<span class="campanha-text">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra purus posuere lectus pretium in egestas diam porta. Sed feugiat lobortis feugiat. Curabitur eu libero quam. Sed hendrerit orci in sem commodo varius. Aenean et porttitor erat. Mauris pellentesque molestie vestibulum. Integer vel risus in lorem tristique porta eu sit amet erat. Morbi pretium sodales aliquet. Phasellus neque ligula, elementum nec convallis et, rhoncus ac ligula. Quisque eget ultrices justo.
 					<br /><br />
 			Cras ac tincidunt mi. Curabitur quis nulla vel libero sagittis mollis nec ac justo. Nullam vulputate bibendum felis, quis tristique tortor porta gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet sapien felis, at elementum urna. Mauris adipiscing lorem vel dolor tempor lacinia. Duis nec turpis leo, in lobortis nisl. Duis id velit id ante pulvinar semper. Cras euismod, magna ut porta dapibus, odio magna bibendum sapien, vel suscipit augue augue vel ipsum. Pellentesque adipiscing justo ultrices enim auctor placerat. Phasellus id sodales tortor.</span><br />
-					<a href="https://www.nuuvem.com.br/" class="link"><img src="img/button.png" class="button" onmouseover="this.src='img/button-hover.png'" onmouseout="this.src='img/button.png'" /></a>
+					<a href="https://www.nuuvem.com.br/" class="link"><img src="img/button.png" class="button" border="none" onmouseover="this.src='img/button-hover.png'" onmouseout="this.src='img/button.png'" /></a>
 				</div>
 			</div>
 			<div class="shadowdown" ></div>
