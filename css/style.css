@@ -128,6 +128,16 @@ body
 	width:130%;
 }
 
+.up
+{
+	padding-bottom:5%;
+}
+
+.down
+{
+	padding-top:5%;
+}
+
 .button
 {
 	padding-left:35%;
@@ -193,3 +203,11 @@ body
 #slider-code .disable { visibility: hidden; }
 #slider-code .overview { list-style: none; position: absolute; padding: 0; margin: 0; left: 0; top: 0; }
 #slider-code .overview li{ float: left; margin: 0 20px 0 0; padding: 1px; height: 121px; width: 236px;}
+
+
+#counter
+{
+	height:30%;
+	position:absolute;
+	width:50%;
+}

@@ -4,11 +4,18 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<script src="http://code.jquery.com/jquery-2.0.3.min.js" type="text/javascript"></script>
 	<script src="js/code.js" type="text/javascript"></script>
-	<script src="js/tiny-carousel.js" type="text/javascript"></script>
-	<script src="js/countdown.js" type="text/javascript"></script>
 	
+	<!-- Slider -->
+	<script src="js/tiny-carousel.js" type="text/javascript"></script>
+	
+	<!-- zoom image -->
 	<script src="js/jquery.lighter.js"></script>
 	<link href="css/jquery.lighter.css" rel="stylesheet" />
+	
+	<!-- Countdown -->
+	<script src="js/jquery.countdown.js"></script>
+	<script src="js/jquery.countdown-pt-BR.js"></script>
+	<link href="css/jquery.countdown.css" rel="stylesheet" />
 </head>
 <body >
 	<div class="wrapper">
@@ -19,28 +26,7 @@
 				<span id="h3">SUPER CAMPANHA DE</span><br />
 				<span id="h2">FINAL DE SEMANA</span><br />
 				<span id="h5">TEMPO RESTANTE</span>
-				<script>
-					var myCountdown1 = new Countdown({
-							width	  	: $(window).width()*0.16,      // Defaults to 200 x 30 pixels, you can specify a custom size here
-							height	 	: $(window).height()*0.068, 
-							rangeHi  : "day",
-                            year: 2013,
-							month: 09,
-							day : 10, 
-                            hour	: 0,
-                            minute	: 0, 
-                            second	: 0,
-							numbers : {
-								font : "Arial",
-								color	: "#151515"
-                            },
-							labels	:	{
-								font  	: "Arial",
-								color 	: "#FFBA00",
-								weight	: "bold"
-							}
-							});
-				</script>
+				<div id="counter"></div>
 			</div>
 			<img src="img/header_bg.jpg" class="bg" />
 			
@@ -55,6 +41,7 @@
 					<br /><br />
 			Cras ac tincidunt mi. Curabitur quis nulla vel libero sagittis mollis nec ac justo. Nullam vulputate bibendum felis, quis tristique tortor porta gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet sapien felis, at elementum urna. Mauris adipiscing lorem vel dolor tempor lacinia. Duis nec turpis leo, in lobortis nisl. Duis id velit id ante pulvinar semper. Cras euismod, magna ut porta dapibus, odio magna bibendum sapien, vel suscipit augue augue vel ipsum. Pellentesque adipiscing justo ultrices enim auctor placerat. Phasellus id sodales tortor.</span>
 					<img src="img/middle-line-up.png" class="middle-line up" />
+					<span class="campanha-titulo">Confira as imagens</span><br /><br />
 					<div id="slider-code">
 						<a class="buttons prev" href="#">left</a>
 							<div class="viewport">
