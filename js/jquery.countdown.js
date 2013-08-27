@@ -524,13 +524,15 @@ $.extend(Countdown.prototype, {
 		};
 		var showFull = function(period) {
 			var labelsNum = inst.options['labels' + whichLabels(inst._periods[period])];
-			var dots = '';//<span class="dots">:</span>
+			var dots = '';
 			if(period >= 4) dots += '<span class="dots">:</span>';
+			var num = self._translateDigits(inst, inst._periods[period]);
+			if(parseInt(num) < 10 ) num = '0' + num; 
 			return ((!inst.options.significant && show[period]) ||
 				(inst.options.significant && showSignificant[period]) ?
 				dots + '<span class="' + plugin._sectionClass + '">' +
 				'<span class="' + plugin._amountClass + '">' +
-				self._translateDigits(inst, inst._periods[period]) + '</span><br/><span class="labels">' +
+				num + '</span><br/><span class="labels">' +
 				(labelsNum ? labelsNum[period] : labels[period]) + '</span></span>' : '');
 		};
 		return (inst.options.layout ? this._buildLayout(inst, show, inst.options.layout,
