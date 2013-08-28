@@ -27,7 +27,12 @@
 			
 			function m(){
 				if(e.controls){
-					d.toggleClass("disable",p<=0);f.toggleClass("disable",!(p+1<u))
+					//d.toggleClass("disableprev",p<=0);f.toggleClass("disablenext",!(p+1<u));
+					if(p<=0) $('#prev').attr('src','img/prev-disabled.png');
+					else $('#prev').attr('src','img/prev.png');
+					if(!(p+1<u)) $('#next').attr('src','img/next-disabled.png');
+					else $('#next').attr('src','img/next.png');
+					
 				}
 				if(e.pager){
 					var x=a(".pagenum",l);x.removeClass("active");
@@ -70,19 +75,23 @@
 			this.start=function(){o=false;t()};
 			this.move=function(y,z){
 										p=z?y:p+=y;
-										if(p>-1&&p<u){
+										//if(p>-1&&p<u){
 											var x={};
 											x[s?"left":"top"]=-(p*(w*e.display));
-											/*if(p<0)
+											if(p<0)
 											{
-												p=u-1
-												x[s?"left":"top"]=-(p*(w*e.display));
+												/*p=u-1
+												x[s?"left":"top"]=-(p*(w*e.display));*/
+												p=0;
+												x[s?"left":"top"]=0;	
 											}
 											if(!(p+1<u+1))
 											{
-												x[s?"left":"top"]=0;
-												p=0;
-											}*/
+												/*x[s?"left":"top"]=0;
+												p=0;*/
+												p=u-1;
+												x[s?"left":"top"]=-(p*(w*e.display));
+											}
 											g.animate(x,
 												{
 													queue:false,duration:e.animation?e.duration:0,complete:function()
@@ -97,7 +106,7 @@
 											);
 											m();
 											t()
-										}
+										//}
 								};
 			function c(){
 				w=s?a(k[0]).outerWidth(true):a(k[0]).outerHeight(true);

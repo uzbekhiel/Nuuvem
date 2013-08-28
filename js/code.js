@@ -10,4 +10,10 @@ $(document).ready(function(){
 		  $('.search').remove();
 		});
 		
+		$('.search').mouseover(function() {
+		  $(this).css({ border: '2px solid #EAAB04' });
+		  $(this).append("<img src=\"img/search-img.png\" class=\"search\" /> ");
+		});
+		
+		
 });
