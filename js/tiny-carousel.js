@@ -27,7 +27,7 @@
 			
 			function m(){
 				if(e.controls){
-					//d.toggleClass("disable",p<=0);f.toggleClass("disable",!(p+1<u))
+					d.toggleClass("disable",p<=0);f.toggleClass("disable",!(p+1<u))
 				}
 				if(e.pager){
 					var x=a(".pagenum",l);x.removeClass("active");
@@ -70,10 +70,10 @@
 			this.start=function(){o=false;t()};
 			this.move=function(y,z){
 										p=z?y:p+=y;
-										//if(p>-1&&p<u){
+										if(p>-1&&p<u){
 											var x={};
 											x[s?"left":"top"]=-(p*(w*e.display));
-											if(p<0)
+											/*if(p<0)
 											{
 												p=u-1
 												x[s?"left":"top"]=-(p*(w*e.display));
@@ -82,7 +82,7 @@
 											{
 												x[s?"left":"top"]=0;
 												p=0;
-											}
+											}*/
 											g.animate(x,
 												{
 													queue:false,duration:e.animation?e.duration:0,complete:function()
@@ -97,7 +97,7 @@
 											);
 											m();
 											t()
-										//}
+										}
 								};
 			function c(){
 				w=s?a(k[0]).outerWidth(true):a(k[0]).outerHeight(true);
