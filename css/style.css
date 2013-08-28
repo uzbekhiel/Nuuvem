@@ -130,12 +130,13 @@ body
 
 .up
 {
-	padding-bottom:5%;
+	padding-bottom:3%;
+	padding-top:3%;
 }
 
 .down
 {
-	padding-top:5%;
+	padding-bottom:3%;
 }
 
 .button
@@ -231,8 +232,8 @@ body
 
 .carousel-bg
 {
-	height:121px;
-	width: 80%;
+	height:110px;
+	width: 78%;
 }
 
 
