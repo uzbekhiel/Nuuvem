@@ -1,8 +1,5 @@
-body
-{
-	margin: 0;
-	padding: 0;
-}
+body{margin: 0;padding: 0;}
+a{border:none;}
 
 .conteudo,.header,.footer
 {
@@ -200,7 +197,7 @@ body
 #slider-code .viewport { float: left; width: 660px; height: 130px; overflow: hidden; position: relative; }
 #slider-code .buttons { display: block; margin: 30px 15px 0 0; float: left; }
 #slider-code .next { margin: 30px 0 0 0; right:0; position:absolute; }
-#slider-code .prev{ margin-right: 45px; }
+#slider-code .prev{ margin-right: 2.5%; }
 #slider-code .overview { list-style: none; position: absolute; padding: 0; margin: 0; left: 0; top: 0; width:40%; height:10%; }
 #slider-code .overview li{ float: left; margin: 0 10px 0 0; padding: 1px; height: 130px; width: 220px;}
 
