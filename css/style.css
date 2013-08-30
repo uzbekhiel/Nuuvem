@@ -192,14 +192,14 @@ a{border:none;}
 
 /* Slider */
 
-#slider-code img.images{ width:100%;  position:absolute; }
+#slider-code img.images{ width:100%; height:100%; position:absolute; }
 #slider-code { width:100%; overflow:hidden; position: relative;}
-#slider-code .viewport { float: left; width: 660px; height: 130px; overflow: hidden; position: relative; }
+#slider-code .viewport { float: left; width: 80%; height: 130px; overflow: hidden; position: relative; }
 #slider-code .buttons { display: block; margin: 30px 15px 0 0; float: left; }
 #slider-code .next { margin: 30px 0 0 0; right:0; position:absolute; }
 #slider-code .prev{ margin-right: 2.5%; }
-#slider-code .overview { list-style: none; position: absolute; padding: 0; margin: 0; left: 0; top: 0; width:40%; height:10%; }
-#slider-code .overview li{ float: left; margin: 0 10px 0 0; padding: 1px; height: 130px; width: 220px;}
+#slider-code .overview { list-style: none; position: absolute; padding: 0; margin: 0;  top: 0; height:10%; }
+#slider-code .overview li{ float: left; margin: 0 10px 0 0; padding: 1px; height: 130px; width: 0.15%;}
 
 #prev
 {
@@ -215,22 +215,22 @@ a{border:none;}
 {
 	border: 2px solid white;
 	position:absolute;
-	width:10%;
-	height:700%;
+	width:0.15%;
+	height:660%;
 }
 
 .search
 {
 	position:absolute;
 	width:15%;
-	margin-top:20%;
+	margin-top:25px;
 	margin-left:40%;
 }
 
 .carousel-bg
 {
-	height:110px;
-	width: 78%;
+	height:100px;
+	width: 105%;
 }
 
 

@@ -30,7 +30,7 @@
 					//d.toggleClass("disableprev",p<=0);f.toggleClass("disablenext",!(p+1<u));
 					if(p<=0) $('#prev').attr('src','img/prev-disabled.png');
 					else $('#prev').attr('src','img/prev.png');
-					if(!(p+1<u)) $('#next').attr('src','img/next-disabled.png');
+					if(!(p+3<u)) $('#next').attr('src','img/next-disabled.png');	
 					else $('#next').attr('src','img/next.png');
 					
 				}
@@ -75,6 +75,8 @@
 			this.start=function(){o=false;t()};
 			this.move=function(y,z){
 										p=z?y:p+=y;
+										w=a(k[0]).outerWidth(true)
+										
 										//if(p>-1&&p<u){
 											var x={};
 											x[s?"left":"top"]=-(p*(w*e.display));
@@ -85,11 +87,12 @@
 												p=0;
 												x[s?"left":"top"]=0;	
 											}
-											if(!(p+1<u+1))
+											if(!(p+2<u))
 											{
 												/*x[s?"left":"top"]=0;
 												p=0;*/
-												p=u-1;
+												//p=(Math.ceil(h.outerWidth()/(w*e.display)));
+												p=4;
 												x[s?"left":"top"]=-(p*(w*e.display));
 											}
 											g.animate(x,
@@ -109,11 +112,13 @@
 										//}
 								};
 			function c(){
-				w=s?a(k[0]).outerWidth(true):a(k[0]).outerHeight(true);
-				var x=Math.ceil(((s?h.outerWidth():h.outerHeight())/(w*e.display))-1);
+				//w=s?a(k[0]).outerWidth(true):a(k[0]).outerHeight(true);
+				w=a(k[0]).outerWidth(true)
+				//var x=Math.ceil(((h.outerWidth()/(w*e.display))-1));
+				var x = 0
 				u=Math.max(1,Math.ceil(k.length/e.display)-x);
 				p=Math.min(u,Math.max(1,e.start))-2;
-				g.css(s?"width":"height",(w*k.length));
+				g.css(s?"width":"height",((w*k.length)/s?$(window).width():$(window).height())*100);
 				i.move(1);
 				r();
 				return i
