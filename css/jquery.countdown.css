@@ -11,7 +11,6 @@
 	clear: both;
 	width: 100%;
 	padding: 0px 2px;
-	text-align: center;
 }
 .countdown_show1 .countdown_section {
 	width: 98%;
@@ -37,15 +36,19 @@
 .countdown_section {
 	display: block;
 	float: left;
-	font-size: 75%;
-	text-align: center;
+	font-size: 75%;	
 	background-image:url('../img/counter-bg.png');
 	background-repeat:no-repeat;
+	padding-top:1%;
 }
 .countdown_amount {
 	font-size: 200%;
 	font-family:Arial;
 	color:#151515;
+	text-align: center;
+	font-weight: lighter;
+	margin-left:18%;
+	margin-top:20%;
 }
 .countdown_descr {
 	display: block;
@@ -56,6 +59,7 @@
 .labels
 {
 	color:#FFBA00;
+	font-size: 70%;
 }
 
 .dots

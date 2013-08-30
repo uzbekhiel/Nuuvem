@@ -527,7 +527,12 @@ $.extend(Countdown.prototype, {
 			var dots = '';
 			if(period >= 4) dots += '<span class="dots">:</span>';
 			var num = self._translateDigits(inst, inst._periods[period]);
-			if(parseInt(num) < 10 ) num = '0' + num; 
+			if(parseInt(num) < 10 ){	
+				num = '0 ' + num; 
+			}else{
+				var n=num.split("");
+				num = n[0] + " " + n[1];
+			}
 			return ((!inst.options.significant && show[period]) ||
 				(inst.options.significant && showSignificant[period]) ?
 				dots + '<span class="' + plugin._sectionClass + '">' +
