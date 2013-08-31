@@ -76,45 +76,35 @@
 			this.move=function(y,z){
 										p=z?y:p+=y;
 										w=a(k[0]).outerWidth(true)
-										
-										//if(p>-1&&p<u){
-											var x={};
+										var x={};
+										x[s?"left":"top"]=-(p*(w*e.display));
+										if(p<0)
+										{
+											p=0;
+											x[s?"left":"top"]=0;	
+										}
+										if(!(p+2<u))
+										{
+											p=u-3;
 											x[s?"left":"top"]=-(p*(w*e.display));
-											if(p<0)
+										}
+										g.animate(x,
 											{
-												/*p=u-1
-												x[s?"left":"top"]=-(p*(w*e.display));*/
-												p=0;
-												x[s?"left":"top"]=0;	
-											}
-											if(!(p+2<u))
-											{
-												/*x[s?"left":"top"]=0;
-												p=0;*/
-												//p=(Math.ceil(h.outerWidth()/(w*e.display)));
-												p=4;
-												x[s?"left":"top"]=-(p*(w*e.display));
-											}
-											g.animate(x,
-												{
-													queue:false,duration:e.animation?e.duration:0,complete:function()
+												queue:false,duration:e.animation?e.duration:0,complete:function()
+													{
+														if(typeof e.callback==="function")
 														{
-															if(typeof e.callback==="function")
-															{
-																e.callback.call(this,k[p],p)
-															}
+															e.callback.call(this,k[p],p)
 														}
-												
-												}
-											);
-											m();
-											t()
-										//}
+													}
+											
+											}
+										);
+										m();
+										t();
 								};
 			function c(){
-				//w=s?a(k[0]).outerWidth(true):a(k[0]).outerHeight(true);
 				w=a(k[0]).outerWidth(true)
-				//var x=Math.ceil(((h.outerWidth()/(w*e.display))-1));
 				var x = 0
 				u=Math.max(1,Math.ceil(k.length/e.display)-x);
 				p=Math.min(u,Math.max(1,e.start))-2;
