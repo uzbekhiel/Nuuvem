@@ -5,7 +5,6 @@ $(document).ready(function(){
 
 		$('#slider-code').tinycarousel({controls: true});	
 		$('#counter').countdown({until: new Date("October 10, 2013 10:00:00"),format: 'DHMS'});
-		//$('#counter').countdown({until: new Date(),format: 'DHMS'});
 		
 		$('.overview a').mouseover(function() {
 		  $(this).children('div').css({ border: '2px solid #EAAB04' });

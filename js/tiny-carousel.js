@@ -30,7 +30,7 @@
 					//d.toggleClass("disableprev",p<=0);f.toggleClass("disablenext",!(p+1<u));
 					if(p<=0) $('#prev').attr('src','img/prev-disabled.png');
 					else $('#prev').attr('src','img/prev.png');
-					if(!(p+3<u)) $('#next').attr('src','img/next-disabled.png');	
+					if(!(p+4<u)) $('#next').attr('src','img/next-disabled.png');	
 					else $('#next').attr('src','img/next.png');
 					
 				}
@@ -83,9 +83,9 @@
 											p=0;
 											x[s?"left":"top"]=0;	
 										}
-										if(!(p+2<u))
+										if(!(p+3<u))
 										{
-											p=u-3;
+											p=u-4;
 											x[s?"left":"top"]=-(p*(w*e.display));
 										}
 										g.animate(x,
